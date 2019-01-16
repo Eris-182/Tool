@@ -10,6 +10,22 @@
 <link href="style.css" rel="stylesheet">
 <script src="jquery.min.js"></script>
 </head>
+<style>
+#notify{width:100%;height:100%;background:rgba(0,0,0,0.4); position:absolute;top:0;z-index:9999}
+.notify{top:45%;left:50%;transform:translate(-50%,-50%);height:220px;width: 500px;max-width:90%;overflow: hidden;background: #fff; border-radius: 10px; border: 1px solid #ddd; z-index: 10000;position: fixed; }
+.notify h3{color:rgba(0,0,0,.65);margin:10px 0;position:relative;padding:15px;font-weight:600;font-size:27px;text-align:center}
+.notify p{line-height:1.6;margin:0 0 20px;color:#646464;font-size:18px;text-align:center;padding:10px 20px}
+.ok-button{background:#7cd1f9;color:#fff;font-weight:600;font-size:14px;padding:10px 20px;border-radius:5px;text-align:center;cursor: pointer;}
+.ok-button:hover{border:double #eee;background:#5c90d2;padding:8px 18px;color:#fff;transition:0s;cursor: pointer;}
+</style>
+<div id='notify'>
+<div class='notify'>
+  <h3> Thông báo </h3>
+  <p> Chào mừng đến với Blogkiemtien.vn<br/> Ấn OK để đóng thông báo </p>
+<center><a class='ok-button' onclick='document.getElementById(&#39;notify&#39;).style.display = &#39;none&#39;'>OK</a></center>
+  </div>
+</div>
+
 <div id="popup-giua-man-hinh">
 <div class="popUpBannerBox" style="display: none;">
 <div class="modal-dialog" style="margin-top: 150px;">
